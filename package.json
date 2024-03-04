@@ -20,6 +20,7 @@
   "homepage": "https://github.com/larsknutson/demo-dependabot#readme",
   "dependencies": {
     "express": "^4",
+    "tap": "^12",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
