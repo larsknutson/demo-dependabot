@@ -6,6 +6,9 @@ permissions:
   pull-requests: write
   packages: read
 
+env:
+  GH_TOKEN: ${{ secrets.RUNNER_TOKEN }}
+
 jobs:
   dependabot:
     runs-on: ubuntu-latest
