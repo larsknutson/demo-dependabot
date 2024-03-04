@@ -1,0 +1,28 @@
+{
+  "name": "demo-dependabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Not doing tests wee :)\" && exit 0",
+    "build": "tsc --build .",
+    "start": "node dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larsknutson/demo-dependabot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larsknutson/demo-dependabot/issues"
+  },
+  "homepage": "https://github.com/larsknutson/demo-dependabot#readme",
+  "dependencies": {
+    "express": "^2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24"
+  }
+}
