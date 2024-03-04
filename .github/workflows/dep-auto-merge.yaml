@@ -15,7 +15,7 @@ jobs:
         id: metadata
         uses: dependabot/fetch-metadata@v1.6.0
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.RUNNER_TOKEN }}"
           skip-commit-verification: true
 
       - name: Checkout repository
@@ -32,11 +32,11 @@ jobs:
           fi
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GH_TOKEN: ${{secrets.RUNNER_TOKEN}}
 
       - name: Enable auto-merge for Dependabot PRs
         if: ${{ contains(github.event.pull_request.title, 'bump')}}
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.RELEASE_TOKEN}}
+          GH_TOKEN: ${{secrets.RUNNER_TOKEN}}
