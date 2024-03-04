@@ -1,6 +1,6 @@
 {
   "name": "demo-dependabot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/larsknutson/demo-dependabot#readme",
   "dependencies": {
     "express": "^4",
-    "tap": "^18",
+    "tap": "^12",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
