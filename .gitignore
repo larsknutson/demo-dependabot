@@ -1,0 +1,7 @@
+#ts output
+dist
+tsconfig.tsbuildinfo
+
+#deps
+node_modules
+
